@@ -6,7 +6,7 @@ A place for freelancers, contractors, creatives and makers; bakers, gardeners, p
 
 Small business owners know - getting your dream off the ground no longer requires a flyer and a prayer. It requires a crack team of marketeers, influencers, events (catered) and an online, all round presence. 
 
-Not just a website but an app. Not just a markey stall, but an online ecommerce store. Not just a hero shot, but an in the wild photoshoot. 
+Not just a website but an app. Not just a market stall, but an online ecommerce store. Not just a hero shot, but a photoshoot. 
 
 Our dreams are our passion, and what we're really damn good at. 
 
