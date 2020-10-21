@@ -15,3 +15,7 @@ But we cant do it on our own. And now more that ever, no man is an island.
 So here in this app, is where you can - exchange what you can offer, for what your business really needs. 
 
 So go ahead, take a look - it wont cost you a dime. All we ask in return, is that what you get out, you put back in! 
+
+
+# Ideation and Design
+![Moodboards](/READMEassets/CollatedMoodboards.png)
