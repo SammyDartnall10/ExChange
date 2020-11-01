@@ -1,6 +1,6 @@
 # ExChange
 
-[Logo](/READMEassets/logoColour-14.png)
+![Logo](/READMEassets/logoColour-14.png)
 
 ## What is it?
 
