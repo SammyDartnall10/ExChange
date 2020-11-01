@@ -1,5 +1,7 @@
 # ExChange
 
+[Logo](/READMEassets/logoColour-14.png)
+
 ## What is it?
 
 A place for freelancers, contractors, creatives and makers; bakers, gardeners, painters and carpenters. A place where you swap what you have, for what you need. 
