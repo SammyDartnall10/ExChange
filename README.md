@@ -21,3 +21,6 @@ So go ahead, take a look - it wont cost you a dime. All we ask in return, is tha
 
 # Ideation and Design
 ![Moodboards](/READMEassets/CollatedMoodboards.png)
+
+# Style Tile
+![StyleTile](/READMEassets/style_tile.png)
