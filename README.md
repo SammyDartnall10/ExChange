@@ -23,7 +23,7 @@ So go ahead, take a look - it wont cost you a dime. All we ask in return, is tha
 ![Moodboards](/READMEassets/CollatedMoodboards.png)
 
 ## Process: Logo Development 
-![DesignDevlopment](/READMEassets/Design_Development.png)
+![DesignDevelopment](/READMEassets/Design_Development.png)
 
 # Style Tile
 ![StyleTile](/READMEassets/style_tile.png)
