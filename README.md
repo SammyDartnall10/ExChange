@@ -26,4 +26,4 @@ So go ahead, take a look - it wont cost you a dime. All we ask in return, is tha
 ![DesignDevelopment](/READMEassets/Design_Development.png)
 
 # Style Tile
-![StyleTile](/READMEassets/style_tile.png)
+![StyleTile](/READMEassets/updated_tile.png)
