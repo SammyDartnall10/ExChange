@@ -2,18 +2,31 @@
   "name": "exchange",
   "version": "1.0.0",
   "description": "exchange for better",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SammyDartnall10/ExChange.git"
   },
-  "author": "",
+  "author": "Sammy Dartnall",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/SammyDartnall10/ExChange/issues"
   },
-  "homepage": "https://github.com/SammyDartnall10/ExChange#readme"
+  "homepage": "https://github.com/SammyDartnall10/ExChange#readme",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "db-migrate": "^0.11.11",
+    "db-migrate-pg": "^1.2.2",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6",
+    "pg": "^8.4.2",
+    "pg-native": "^3.0.0"
+  }
 }
