@@ -2,7 +2,7 @@ const express = require("express")
 const app = express()
 const port = 3001
 
-const quotes = require('./routes/listing')
+const quotes = require('./routes/listings')
 
 app.use(express.json())
 app.use(function (req, res, next) {
@@ -15,7 +15,7 @@ app.use(function (req, res, next) {
 
 
 app.get('/', (req, res) => {
-  quotes.getQuotes()
+  quotes.getListings()
     .then(response => {
       console.log(response.rows)
       // res.json(response.rows)
