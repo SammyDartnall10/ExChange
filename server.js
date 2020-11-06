@@ -2,7 +2,7 @@ const express = require("express")
 const app = express()
 const port = 3001
 
-const quotes = require('./routes/listings')
+// const listings = require('./routes/listings')
 
 app.use(express.json())
 app.use(function (req, res, next) {
@@ -15,27 +15,28 @@ app.use(function (req, res, next) {
 
 
 app.get('/', (req, res) => {
-  quotes.getListings()
-    .then(response => {
-      console.log(response.rows)
-      // res.json(response.rows)
-      res.status(200).send(response.rows)
-    })
-    .catch(error => {
-      res.status(500).send(error)
-    })
+  // listings.getListings()
+  //   .then(response => {
+  //     console.log(response.rows)
+  //     // res.json(response.rows)
+  //     res.status(200).send(response.rows)
+  //   })
+  //   .catch(error => {
+  //     res.status(500).send(error)
+  //   })
+  res.json({ msg: "welcome to alt work" })
 })
 
-app.post('/listing', (req, res) => {
-  quotes.createListing(req.body)
-    .then(response => {
-      console.log("listing added")
-      res.status(200).send(response);
-    })
-    .catch(error => {
-      res.status(500).send(error)
-    })
-})
+// app.post('/listing', (req, res) => {
+//   listings.createListing(req.body)
+//     .then(response => {
+//       console.log("listing added")
+//       res.status(200).send(response);
+//     })
+//     .catch(error => {
+//       res.status(500).send(error)
+//     })
+// })
 
 
 
