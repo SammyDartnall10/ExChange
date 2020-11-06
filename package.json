@@ -1,0 +1,19 @@
+{
+  "name": "exchange",
+  "version": "1.0.0",
+  "description": "exchange for better",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SammyDartnall10/ExChange.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SammyDartnall10/ExChange/issues"
+  },
+  "homepage": "https://github.com/SammyDartnall10/ExChange#readme"
+}

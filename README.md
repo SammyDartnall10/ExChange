@@ -25,5 +25,10 @@ So go ahead, take a look - it wont cost you a dime. All we ask in return, is tha
 ## Process: Logo Development 
 ![DesignDevelopment](/READMEassets/Design_Development.png)
 
-# Style Tile
+## Style Tile
 ![StyleTile](/READMEassets/updated_tile.png)
+
+# Technologies Used
+React 
+Postgresql 
+Express 
