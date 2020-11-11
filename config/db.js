@@ -4,7 +4,7 @@ const pool = new Pool({
   host: 'localhost',
   database: 'exchange',
   password: 'root',
-  post: 5432,
+  port: 5432,
 })
 
 // port?

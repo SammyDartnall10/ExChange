@@ -7,7 +7,7 @@ const pool = new Pool({
   host: 'localhost',
   database: 'exchange',
   password: 'root',
-  post: 5432,
+  port: 5432,
 })
 
 
@@ -22,8 +22,26 @@ const getListings = () => {
   })
 }
 
-
+const createListing = (body) => {
+  return new Promise(function (resolve, reject) {
+    const {
+      title,
+      created_by,
+      company_for,
+      description,
+      status,
+      date_created
+    } = body
+    pool.query('INSERT INTO listings (title, created_by, company_for, description, status, date_created) VALUES ($1, $2, $3, $4, $5, $6) RETURNING *', [title, created_by, company_for, description, status, date_created], (error, results) => {
+      if (error) {
+        reject(error)
+      }
+      resolve(`New Quote Added: ${results}`)
+    })
+  })
+}
 
 module.exports = {
-  getListings
+  getListings,
+  createListing
 }
