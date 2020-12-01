@@ -1,6 +1,7 @@
 const express = require("express")
 const app = express()
 const port = 3001
+const router = express.Router();
 
 const listings = require('./routes/listings')
 const users = require('./routes/users')
@@ -13,17 +14,6 @@ app.use(function (req, res, next) {
   next();
 })
 
-
-app.post('/users', (req, res) => {
-  users.createUser(req.body)
-    .then(response => {
-      console.log("listing added")
-      res.status(200).send(response);
-    })
-    .catch(error => {
-      res.status(500).send(error)
-    })
-})
 
 app.get('/', (req, res) => {
   // listings.getListings()
@@ -38,8 +28,12 @@ app.get('/', (req, res) => {
   res.json({ msg: "welcome to alt work" })
 })
 
-app.post('/listing', (req, res) => {
-  listings.createListing(req.body)
+app.use("/listing", require("./routes/listings"));
+
+
+
+app.post('/users', (req, res) => {
+  users.createUser(req.body)
     .then(response => {
       console.log("listing added")
       res.status(200).send(response);
@@ -48,6 +42,8 @@ app.post('/listing', (req, res) => {
       res.status(500).send(error)
     })
 })
+
+
 
 
 
