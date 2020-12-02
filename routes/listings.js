@@ -1,6 +1,15 @@
 const express = require("express");
 const router = express.Router();
-const pool = require('../config/db')
+// const pool = require('../config/db')
+
+const Pool = require('pg').Pool
+const pool = new Pool({
+  user: 'admin',
+  host: 'localhost',
+  database: 'exchange',
+  password: 'root',
+  port: 5432,
+})
 
 
 router.get('/', (req, res) => {
@@ -8,14 +17,21 @@ router.get('/', (req, res) => {
 })
 
 router.get('/all', (req, res, next) => {
-  pool.query(`SELECT * FROM listings 
-              ORDER BY date_created DESC`,
-    (err, res) => {
-      res.json(res.rows)
+  pool
+    .query(`SELECT * FROM listings`,)
+    .then(data => {
+      console.log(data.rows)
+      res.json(data.rows)
     })
+    .catch(err => console.error('Error executing query', err.stack))
 })
 
 module.exports = router
+
+// (q_err, q_res) => {
+//   console.log(q_res)
+//   res.json(q_res.rows)
+// })
 
 // const Pool = require('pg').Pool
 
