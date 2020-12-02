@@ -1,15 +1,15 @@
 const express = require("express");
 const router = express.Router();
-// const pool = require('../config/db')
+const pool = require('../config/db')
 
-const Pool = require('pg').Pool
-const pool = new Pool({
-  user: 'admin',
-  host: 'localhost',
-  database: 'exchange',
-  password: 'root',
-  port: 5432,
-})
+// const Pool = require('pg').Pool
+// const pool = new Pool({
+//   user: 'admin',
+//   host: 'localhost',
+//   database: 'exchange',
+//   password: 'root',
+//   port: 5432,
+// })
 
 
 router.get('/', (req, res) => {
