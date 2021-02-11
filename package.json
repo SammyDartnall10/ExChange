@@ -4,7 +4,7 @@
   "description": "exchange for better",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "tap",
     "start": "node server.js",
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
@@ -28,5 +28,8 @@
     "nodemon": "^2.0.6",
     "pg": "^8.4.2",
     "pg-native": "^3.0.0"
+  },
+  "devDependencies": {
+    "tap": "^14.11.0"
   }
 }
