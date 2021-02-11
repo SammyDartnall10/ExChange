@@ -1,4 +1,4 @@
-const express = require("express");
+const express = require('express');
 const router = express.Router();
 const pool = require('../config/db')
 
@@ -13,17 +13,18 @@ const pool = require('../config/db')
 
 
 router.get('/', (req, res) => {
-  res.json('hello world')
+  res.json({ msg: 'listings route' })
 })
 
 router.get('/all', (req, res, next) => {
-  pool
-    .query(`SELECT * FROM listings`,)
-    .then(data => {
-      console.log(data.rows)
-      res.json(data.rows)
-    })
-    .catch(err => console.error('Error executing query', err.stack))
+  res.json({ msg: 'all listings' })
+  // pool
+  //   .query(`SELECT * FROM listings`,)
+  //   .then(data => {
+  //     console.log(data.rows)
+  //     res.json(data.rows)
+  //   })
+  //   .catch(err => console.error('Error executing query', err.stack))
 })
 
 module.exports = router
