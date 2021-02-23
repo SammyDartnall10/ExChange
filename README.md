@@ -29,24 +29,34 @@ So go ahead, take a look - it wont cost you a dime. All we ask in return, is tha
 ![StyleTile](/READMEassets/updated_tile.png)
 
 # Technologies Used
+## Testing
+TAP (test anything protocol)
+
+Cucumber - business driven development 
+
+## Main App
 React 
+
 Postgresql 
+
 Express 
 
 # Features
 ## Implemented
 
-## Remaining to implement 
-
+## In Progress
 Authentication: 
 - Log in and out functionality 
 
+Users: 
+- Create new User
+
+## Remaining to implement 
 Authorisation:
 - Only edit your own posts 
 - Only edit your own comments 
 
 Users: 
-- New User
 - Change Password
 - Close Account (removes linked profile/listings/comments)
 
@@ -61,7 +71,7 @@ Listings app:
 - Create new 
 - Edit listing
 - Delete listing 
-- See all  listings 
+- See all listings 
 - See single listing 
 
 Comments app: 
@@ -69,4 +79,12 @@ Comments app:
 - Delete comment
 - See comments on a listing
 
-Just testing SSH is working 
+Reviews app:
+- Create a review
+- Edit your review
+- Delete your review
+
+Admin:
+- FAQs page
+- Support
+- Contact Us
