@@ -33,4 +33,40 @@ React
 Postgresql 
 Express 
 
+# Features
+## Implemented
+
+## Remaining to implement 
+
+Authentication: 
+- Log in and out functionality 
+
+Authorisation:
+- Only edit your own posts 
+- Only edit your own comments 
+
+Users: 
+- New User
+- Change Password
+- Close Account (removes linked profile/listings/comments)
+
+Profile:
+- Create profile 
+- Update profile 
+
+Messaging: 
+- User to user messaging
+
+Listings app: 
+- Create new 
+- Edit listing
+- Delete listing 
+- See all  listings 
+- See single listing 
+
+Comments app: 
+- Create new
+- Delete comment
+- See comments on a listing
+
 Just testing SSH is working 
